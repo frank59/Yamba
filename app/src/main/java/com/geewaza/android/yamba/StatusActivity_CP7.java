@@ -19,7 +19,7 @@ import com.marakana.android.yamba.clientlib.YambaClient;
 import com.marakana.android.yamba.clientlib.YambaClientException;
 
 
-public class StatusActivity_old extends ActionBarActivity implements View.OnClickListener{
+public class StatusActivity_CP7 extends ActionBarActivity implements View.OnClickListener{
 
     private EditText editStatus;
     private Button buttonTweet;
@@ -114,7 +114,7 @@ public class StatusActivity_old extends ActionBarActivity implements View.OnClic
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-            Toast.makeText(StatusActivity_old.this, result, Toast.LENGTH_LONG).show();
+            Toast.makeText(StatusActivity_CP7.this, result, Toast.LENGTH_LONG).show();
         }
     }
 }
