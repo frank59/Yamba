@@ -5,3 +5,7 @@
 .DS_Store
 /build
 /captures
+
+# Eclipse project files
+.classpath
+.project
