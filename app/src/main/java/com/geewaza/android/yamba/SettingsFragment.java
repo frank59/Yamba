@@ -4,6 +4,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceFragment;
 import android.preference.PreferenceManager;
+import android.widget.Toast;
 
 /**
  * Created by wangh on 2015/12/18.
@@ -27,6 +28,6 @@ public class SettingsFragment extends PreferenceFragment implements SharedPrefer
 
 	@Override
 	public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-
+		Toast.makeText(getActivity(), "Change OK!", Toast.LENGTH_LONG).show();
 	}
 }

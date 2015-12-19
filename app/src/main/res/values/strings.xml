@@ -8,10 +8,13 @@
 
 <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="username_summary">username</string>
+    <string name="username_summary">What\'s your user name?</string>
     <string name="username">username</string>
     <string name="password">password</string>
-    <string name="password_summary">password</string>
+    <string name="password_summary">How do you log in?</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="tweet">tweet</string>
+    <string name="refresh">refresh</string>
+    <string name="purge">purge</string>
 
 </resources>
