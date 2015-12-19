@@ -31,6 +31,11 @@ public class MainActivity extends ActionBarActivity {
 			case R.id.action_tweet:
 				startActivity(new Intent("com.geewaza.android.yamba.action.tweet"));
 				return true;
+			case R.id.action_refresh:
+				startService(new Intent(this, RefreshService.class));
+				return true;
+			case R.id.action_purge:
+
 			default: return false;
 		}
 	}

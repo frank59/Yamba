@@ -1,6 +1,7 @@
 package com.geewaza.android.yamba;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
@@ -30,6 +31,19 @@ public class StatusActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_status, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.itemServiceStart:
+                startService(new Intent(this, RefreshService.class));
+                break;
+            case R.id.itemPrefs:
+                break;
+            default: return false;
+        }
         return true;
     }
 }
